@@ -6,7 +6,7 @@ def decode(x):
         num+=(int(x[len(x)-1-i])*(math.pow(2,i)));
     return num;
 
-x=str(input());
+x=str(input('Enter code: '));
 if(x=='1'):
     print('1');
     exit;
@@ -40,6 +40,6 @@ else:
                 w.append(i);
                 num-=1;
     ans=decode(w);
-    print(int(ans));
+    print('Original Number: ',int(ans));
 
 

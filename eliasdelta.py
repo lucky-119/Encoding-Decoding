@@ -13,7 +13,7 @@ def gamma(t):
     return y;
  
 
-x=int(input());
+x=int(input('Enter a number: '));
 t=math.floor(1+math.log(x,2));
 p=gamma(t);
 y=[];
@@ -24,4 +24,4 @@ y.pop();
 for i in range(len(y)):
     p.append(y.pop());
 a=''.join(map(str,p));
-print(a)
+print('Elias Delta Code: '+a)

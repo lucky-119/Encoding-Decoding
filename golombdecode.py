@@ -6,9 +6,9 @@ def decode(x):
         num+=(int(x[len(x)-1-i])*(math.pow(2,i)));
     return num;
 
-x=str(input())
+x=str(input('Enter code: '))
 x=list(x)
-b=int(input())
+b=int(input('Enter value of b: '))
 i=math.floor(math.log(b,2))
 d=math.pow(2,i+1)-b
 
